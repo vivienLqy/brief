@@ -5,7 +5,7 @@ li>a{
    color: rgb(58, 57, 57);
    letter-spacing: 1px;
 }
-footer>ul>li>{
+footer>ul>li{
     list-style: none;
 }
 
@@ -20,7 +20,7 @@ footer>ul>li>{
     margin-left:auto;
     margin-right:auto;
 }
-#hr {
+.barre {
     /* centre verticalement les enfants entre eux */
     align-items: center;
 
@@ -70,12 +70,15 @@ hr{
 .img-container-fluid{
     width: 100%;
 }
+.photo-profil{
+    height: 200px;
+}
 
 
 
 
-#hr::before,
-#hr::after {
+.barre::before,
+.barre::after {
     
     /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
     border-top: 4px solid rgb(54, 187, 228);
