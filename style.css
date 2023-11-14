@@ -1,0 +1,156 @@
+li>a{
+   font-size: 16px;
+   font-weight: bold; 
+   font-family: 'Arial Narrow Bold';
+   color: rgb(58, 57, 57);
+   letter-spacing: 1px;
+}
+footer>ul>li>{
+    list-style: none;
+}
+
+#logo{
+    width: 200px;
+    
+}
+#small{
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+#hr {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center;
+
+    font-size: 1.5rem;
+}
+
+
+
+#hr::before,
+#hr::after {
+    
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 4px solid rgb(54, 187, 228);
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 0 .5em;
+}
+
+@media only screen and (max-width: 812px){
+    li{
+        border: 1px solid black;
+    }
+    li>a{
+        display: block;
+        margin: 5px; 
+        border-color: white;  
+    }
+    li>a>img{
+        position: relative;
+        top: -10px;
+        float: left; 
+        padding-right: 10px; 
+    }
+   
+    #logo{
+        position: relative;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        height: auto;
+    }
+    #small{
+        width: 100%;
+    }
+    h2{
+        font-size: 18px;
+    }
+    button{
+        position: relative;
+        float: right;
+        right: 0px;
+        top: 5px;
+    }
+    h4{
+        font-size: 14px;
+        
+    }
+    #hr::before,
+    #hr::after {
+    
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 2px solid rgb(54, 187, 228);
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 0 .5em;
+    }
+    h5
+    {
+        font-size: 16px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 765px) and (max-width: 990px){
+    #logo1{
+        width: 100%;
+    }
+    #logo2{
+        width: 100%;
+    }
+    #logo3{
+        width: 100%;
+    }
+    #img_footer{
+        height: 450px;
+    }
+}
+@media only screen and (min-width: 650px) and (max-width: 764px){
+    #img_footer{
+        height: 380px;
+    }
+}
+@media only screen and (min-width: 575px) and (max-width: 649px){
+    #img_footer{
+        height: 480px;
+    }
+}
+@media only screen and (min-width: 575px) and (max-width: 649px){
+    #img_footer{
+        height: 480px;
+    }
+}
+@media only screen and (min-width: 305px) and (max-width: 574px){
+    #img_footer{
+        height: 650px;
+    }
+}
+@media only screen and (min-width:908px) and (max-width: 1460px){
+    #img_footer{
+        height: 400px;
+    }
+}
+
